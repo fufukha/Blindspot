@@ -198,6 +198,10 @@ Primary Navigation
 	justify-content: space-between;
 }
 
+.nav_hamburger:hover {
+	cursor: pointer;
+}
+
 .nav_hamburger-line {
 	background: #FAFAFA; 
 	height: 2px;
@@ -227,6 +231,7 @@ Primary Navigation
 	transition: all .16s ease-in-out;
 }
 
+
 @media only screen and (min-width: 1024px) {
 	.nav_primary {
 		justify-content: flex-start;
@@ -241,13 +246,13 @@ Primary Navigation
 	}
 }
 
-
 @media screen and (min-device-width: 1200px) { 
 	.nav_primary {
 		max-width: 1300px; 
 		margin: auto;
 	}
 }
+
 
 /*
 =======================================
@@ -317,7 +322,7 @@ Banner & Hero
 .hero_play:before {
 	content: "";
 	display: inline-block;
-	background: url("../img/play_button.png") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/s/qj11ka5d643g6cn/play_button.png?dl=0") no-repeat;
 	background-size: auto;
 	width: 29px;
 	height: 29px;
@@ -332,13 +337,14 @@ Banner & Hero
 	top: 0px;
 }
 
+
 @media only screen and (min-width: 480px) {
 	.hero_play {
 		margin-top: 16px;
 	}
 
 	.hero_play:before {
-		background: url("../img/play_button_480.png") no-repeat;
+		background: url("https://dl.dropboxusercontent.com/s/ib7hqamsxes1xcd/play_button_480.png?dl=0") no-repeat;
 		width: 34px;
 		height: 34px;
 	}
@@ -461,13 +467,13 @@ h2 {
 
 .card_content {
 	background: #FAFAFA;
-	height: 100%;
+	height: 97%;
 }
 
 .card_thumbnail {
 	/*background: #FAFAFA;*/
 	width: 50%;
-	height: 97%;
+	height: 100%;
 	position: relative;
 	overflow: hidden;
 }
@@ -475,7 +481,7 @@ h2 {
 .card_thumbnail:before {
 	content: "";
 	display: inline-block;
-	background: url("../img/play_button.png") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/s/qj11ka5d643g6cn/play_button.png?dl=0") no-repeat;
 	background-size: auto;
 	width: 28px;
 	height: 28px;
@@ -524,6 +530,8 @@ h2 {
 	display: flex;
 	justify-content: center;
 	padding-top: 30px;
+  background-color: #d0d1d6;
+  padding-bottom: 20px;
 }
 
 .load-more_icon a {
@@ -537,12 +545,14 @@ h2 {
 }
 
 
+
 @media only screen and (min-width: 480px) {
 	.card_description {
 		padding-left: 10px;
 		padding-right: 40px;
 	}
 }
+
 
 @media only screen and (min-width: 768px) {
 	.card {
@@ -573,7 +583,7 @@ h2 {
 	}
 
 	.teaser {
-		height: 550px;
+		height: 598px;
 	}
 
 	.teaser_content {
@@ -592,15 +602,6 @@ h2 {
 	}
 }
 
-@media screen and (min-device-width: 1200px) { 
-	.teaser {
-		height: 360px;
-	}
-	.teaser_content {
-		top: -450px;
-	}
-}
-
 
 /*
 =======================================
@@ -612,6 +613,8 @@ About Show Article
 	background: #e4e5ea;
 	padding-top: 20px;
 	color: #616161;
+  display: relative;
+  bottom: 20px;
 }
 
 .about-show h2 {
@@ -655,7 +658,7 @@ About Show Article
 .more_text:after {
 	content: "";
 	display: inline-block;
-	background: url("../img/load_more_white.png") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/s/dl5fnw17ryhfgkg/load_more_white.png?dl=0") no-repeat;
 	background-size: 100%;
 	width: 12px;
 	height: 9px;
@@ -697,11 +700,14 @@ About Show Article
 		margin-top: 30px;
 	}
 }
+
+
 /*
 =======================================
 Footer
 =======================================
 */
+
 
 @media screen and (min-device-width: 1200px) { 
 	footer div {
@@ -739,7 +745,7 @@ Image
 */
 
 .play-button {
-	background: url("../img/play_button.png") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/s/qj11ka5d643g6cn/play_button.png?dl=0") no-repeat;
 	background-size: auto;
 	width: 28px;
 	height: 28px;
@@ -751,7 +757,7 @@ Image
 }
 
 .load-more_icon {
-	background: url("../img/load_more.png") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/s/990naepk4xun75f/load_more.png?dl=0") no-repeat;
 	background-size: auto;
 	width: 27.91px;
 	height: 14.1px;
@@ -759,6 +765,7 @@ Image
 
 .about-show_img img {
 	width: 100%;
+	height: 100%;
 }
 
 
@@ -852,36 +859,4 @@ p {
 	font-weight: 100;
 }
 
-
-@media only screen and (min-width: 480px) {
-	h2, .hero_description, .hero_play {
-		font-size: 1.4em;
-	}
-
-	.banner_text {
-		font-size: 1.5em;
-	}
-
-	.card_description--1 {
-		font-size: 1.3em;
-	}
-
-	.card_description--2 {
-		font-size: 1.1em;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	.hero_description {
-		font-size: 1.6em;
-	}
-
-	.hero_play {
-		font-size: 1.35em;
-	}
-
-	h2 {
-		font-size: 1.8em;
-	}
-}
 
